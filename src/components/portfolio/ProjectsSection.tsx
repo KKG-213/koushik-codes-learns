@@ -1,0 +1,117 @@
+import { ExternalLink, Github } from "lucide-react"
+import { Button } from "@/components/ui/button"
+
+const ProjectsSection = () => {
+  const projects = [
+    {
+      title: "AI-Based Rock-Paper-Scissors Game",
+      description: "Computer vision game using webcam to detect hand gestures. Built with Python, OpenCV, and Mediapipe for real-time gesture recognition and AI gameplay.",
+      tech: ["Python", "OpenCV", "Mediapipe", "Computer Vision"],
+      category: "AI/ML",
+      color: "primary"
+    },
+    {
+      title: "Weather Station using ESP8266",
+      description: "IoT weather monitoring system with ESP8266 and DHT11 sensor. Features real-time data collection and web dashboard for temperature and humidity display.",
+      tech: ["ESP8266", "DHT11", "IoT", "Web Dashboard", "HTML/CSS/JS"],
+      category: "IoT",
+      color: "secondary"
+    },
+    {
+      title: "Weather Forecast App",
+      description: "Real-time weather application using OpenWeatherMap API. Features dynamic UI updates, responsive design, and location-based weather data.",
+      tech: ["HTML", "CSS", "JavaScript", "API Integration"],
+      category: "Web Development",
+      color: "accent"
+    },
+    {
+      title: "Smart To-Do List App",
+      description: "Responsive task management application with local storage support. Features include add/delete tasks, progress tracking, and persistent data storage.",
+      tech: ["HTML", "CSS", "JavaScript", "Local Storage"],
+      category: "Web Development",
+      color: "primary"
+    },
+    {
+      title: "Interactive Scratch Game",
+      description: "Educational math quiz game for elementary students (Class 3-5). Features animations, instant feedback, and engaging interactive storytelling.",
+      tech: ["Scratch", "Game Development", "Educational Design"],
+      category: "Education",
+      color: "secondary"
+    }
+  ]
+
+  return (
+    <section id="projects" className="section-padding">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-4xl font-bold text-center mb-12 gradient-text">
+          Featured Projects
+        </h2>
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <div 
+              key={index}
+              className="card-glass rounded-xl p-6 hover-glow transition-all duration-300 hover:scale-105"
+            >
+              <div className="space-y-4">
+                <div className="flex items-start justify-between">
+                  <div className={`inline-block px-3 py-1 bg-${project.color}/10 border border-${project.color}/20 rounded-full`}>
+                    <span className={`text-xs font-medium text-${project.color}`}>
+                      {project.category}
+                    </span>
+                  </div>
+                </div>
+                
+                <h3 className="text-xl font-semibold text-foreground leading-tight">
+                  {project.title}
+                </h3>
+                
+                <p className="text-muted-foreground leading-relaxed">
+                  {project.description}
+                </p>
+                
+                <div className="flex flex-wrap gap-2">
+                  {project.tech.map((tech, techIndex) => (
+                    <span 
+                      key={techIndex}
+                      className="px-2 py-1 bg-muted/20 rounded-md text-xs border border-border/30"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                
+                <div className="flex gap-3 pt-2">
+                  <Button variant="outline" size="sm" className="flex-1">
+                    <Github className="w-4 h-4" />
+                    Code
+                  </Button>
+                  <Button variant="ghost" size="sm" className="flex-1">
+                    <ExternalLink className="w-4 h-4" />
+                    Demo
+                  </Button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        
+        {/* GitHub Link */}
+        <div className="text-center mt-12">
+          <Button variant="hero" size="lg" asChild className="hover-glow">
+            <a 
+              href="https://github.com/KKG-213" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Github className="w-5 h-5" />
+              View All Projects on GitHub
+            </a>
+          </Button>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default ProjectsSection

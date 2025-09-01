@@ -7,7 +7,23 @@ const AboutSection = () => {
         </h2>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
+          {/* Profile Image */}
+          <div className="order-2 md:order-1 flex justify-center">
+            <div className="relative">
+              <div className="w-80 h-80 rounded-2xl overflow-hidden border-4 border-primary/20 shadow-2xl hover-glow">
+                <img 
+                  src="/lovable-uploads/3a13d06f-7591-40d5-b946-cebde496e6b6.png" 
+                  alt="Koushik Kumar - Software Engineer and AI/Robotics Instructor"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-4 -right-4 bg-primary/90 backdrop-blur-md rounded-full p-3 border border-primary/30">
+                <span className="text-primary-foreground font-semibold">👨‍💻</span>
+              </div>
+            </div>
+          </div>
+          
+          <div className="order-1 md:order-2 space-y-6">
             <p className="text-lg text-foreground/90 leading-relaxed">
               I'm a passionate Software Engineer and AI/Robotics Course Instructor with a strong 
               foundation in computer science and a drive for innovation. Currently pursuing my 

@@ -9,22 +9,6 @@ const ExperienceSection = () => {
       period: "June 2025 - Present",
       description: "Teaching AI and Robotics, managing frontend and backend (WordPress) of website, and onboarding students from different schools.",
       type: "current"
-    },
-    {
-      title: "Machine Operator",
-      company: "MRF Limited",
-      location: "Gujarat",
-      period: "May 2025 - June 2025",
-      description: "Operated automatic machines for molding tyres in a fast-paced manufacturing environment.",
-      type: "past"
-    },
-    {
-      title: "Sales Representative",
-      company: "ZUNO",
-      location: "Remote",
-      period: "2024",
-      description: "Developed strategies to recruit students as affiliates and expanded the network. Conducted presentations and webinars to promote courses and provide guidance.",
-      type: "past"
     }
   ]
 

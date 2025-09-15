@@ -4,39 +4,53 @@ import { Button } from "@/components/ui/button"
 const ProjectsSection = () => {
   const projects = [
     {
+      title: "WordPress Web Design (Elementor + Razorpay)",
+      description: "Built responsive business websites using Elementor. Integrated Razorpay for secure online payments.",
+      tech: ["WordPress", "Elementor", "Razorpay", "Payment Gateway"],
+      category: "Web Development",
+      color: "primary"
+    },
+    {
+      title: "Fast Restaurant (React + Firebase)",
+      description: "Created a food ordering platform with dynamic menu management. Integrated Firebase for authentication & real-time database.",
+      tech: ["React", "Firebase", "Authentication", "Real-time Database"],
+      category: "Web Development",
+      color: "secondary"
+    },
+    {
       title: "AI-Based Rock-Paper-Scissors Game",
       description: "Computer vision game using webcam to detect hand gestures. Built with Python, OpenCV, and Mediapipe for real-time gesture recognition and AI gameplay.",
       tech: ["Python", "OpenCV", "Mediapipe", "Computer Vision"],
       category: "AI/ML",
-      color: "primary"
+      color: "accent"
     },
     {
       title: "Weather Station using ESP8266",
       description: "IoT weather monitoring system with ESP8266 and DHT11 sensor. Features real-time data collection and web dashboard for temperature and humidity display.",
       tech: ["ESP8266", "DHT11", "IoT", "Web Dashboard", "HTML/CSS/JS"],
       category: "IoT",
-      color: "secondary"
+      color: "primary"
     },
     {
       title: "Weather Forecast App",
       description: "Real-time weather application using OpenWeatherMap API. Features dynamic UI updates, responsive design, and location-based weather data.",
       tech: ["HTML", "CSS", "JavaScript", "API Integration"],
       category: "Web Development",
-      color: "accent"
+      color: "secondary"
     },
     {
       title: "Smart To-Do List App",
       description: "Responsive task management application with local storage support. Features include add/delete tasks, progress tracking, and persistent data storage.",
       tech: ["HTML", "CSS", "JavaScript", "Local Storage"],
       category: "Web Development",
-      color: "primary"
+      color: "accent"
     },
     {
       title: "Interactive Scratch Game",
       description: "Educational math quiz game for elementary students (Class 3-5). Features animations, instant feedback, and engaging interactive storytelling.",
       tech: ["Scratch", "Game Development", "Educational Design"],
       category: "Education",
-      color: "secondary"
+      color: "primary"
     }
   ]
 

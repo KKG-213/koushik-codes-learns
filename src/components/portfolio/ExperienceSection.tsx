@@ -11,6 +11,15 @@ const ExperienceSection = () => {
       type: "current"
     },
     {
+      title: "160 Days of DSA",
+      company: "GeeksforGeeks",
+      location: "Online",
+      period: "Completed",
+      description: "Successfully completed 160 days of intensive Data Structures and Algorithms practice on GeeksforGeeks platform.",
+      type: "achievement",
+      link: "https://drive.google.com/file/d/1JQINWOuNGqeVRl4J4WiiJgR3zd9uZDEv/view?usp=drive_link"
+    },
+    {
       title: "Web Design & Development",
       company: "Freelance",
       location: "Remote",
@@ -67,6 +76,16 @@ const ExperienceSection = () => {
                     <div className="inline-block px-3 py-1 bg-accent/10 border border-accent/20 rounded-full">
                       <span className="text-xs font-medium text-accent">{exp.highlight}</span>
                     </div>
+                  )}
+                  {exp.link && (
+                    <a 
+                      href={exp.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-lg hover:bg-primary/20 transition-colors"
+                    >
+                      <span className="text-sm font-medium text-primary">View Certificate</span>
+                    </a>
                   )}
                 </div>
               </div>

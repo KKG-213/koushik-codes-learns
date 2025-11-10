@@ -25,12 +25,12 @@ const AboutSection = () => {
           
           <div className="order-1 md:order-2 space-y-6">
             <p className="text-lg text-foreground/90 leading-relaxed">
-              I'm a passionate Web Developer with a strong foundation in computer science and a 
+              I'm a passionate Full Stack Web Developer and Freelancer with a strong foundation in computer science and a 
               drive for innovation. Currently pursuing my B.Tech in CSE with an impressive 8 CGPA.
             </p>
             
             <p className="text-lg text-foreground/90 leading-relaxed">
-              Specializing in <span className="text-primary font-semibold">HTML</span>, <span className="text-primary font-semibold">CSS</span>, <span className="text-primary font-semibold">JavaScript</span>, <span className="text-secondary font-semibold">Node.js</span>, <span className="text-secondary font-semibold">WordPress</span>, <span className="text-accent font-semibold">MySQL</span>, and <span className="text-accent font-semibold">MongoDB</span>. I've solved 
+              Specializing in <span className="text-primary font-semibold">HTML</span>, <span className="text-primary font-semibold">CSS</span>, and <span className="text-primary font-semibold">JavaScript</span>. I've solved 
               600+ problems across various coding platforms and built numerous projects ranging 
               from dynamic web applications to full-stack solutions.
             </p>

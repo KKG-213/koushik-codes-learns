@@ -13,7 +13,7 @@ const AboutSection = () => {
               <div className="w-80 h-80 rounded-2xl overflow-hidden border-4 border-primary/20 shadow-2xl hover-glow">
                 <img 
                   src="/lovable-uploads/3a13d06f-7591-40d5-b946-cebde496e6b6.png" 
-                  alt="Koushik Kumar - Software Engineer and AI/Robotics Instructor"
+                  alt="Koushik Kumar - Full Stack Web Developer and Freelancer"
                   className="w-full h-full object-cover"
                 />
               </div>

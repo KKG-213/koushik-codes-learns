@@ -9,6 +9,15 @@ const ExperienceSection = () => {
       period: "June 2025 - Present",
       description: "Teaching AI and Robotics, managing frontend and backend (WordPress) of website, and onboarding students from different schools.",
       type: "current"
+    },
+    {
+      title: "Web Design & Development",
+      company: "Freelance",
+      location: "Remote",
+      period: "6 Months",
+      description: "Specialized in web design using WordPress, HTML, CSS, JavaScript, and MySQL. Successfully completed 10+ JavaScript projects showcasing dynamic web applications and interactive user interfaces.",
+      type: "past",
+      highlight: "10+ JavaScript Projects"
     }
   ]
 
@@ -52,6 +61,11 @@ const ExperienceSection = () => {
                   {exp.type === 'current' && (
                     <div className="inline-block px-3 py-1 bg-primary/10 border border-primary/20 rounded-full">
                       <span className="text-xs font-medium text-primary">Current Role</span>
+                    </div>
+                  )}
+                  {exp.highlight && (
+                    <div className="inline-block px-3 py-1 bg-accent/10 border border-accent/20 rounded-full">
+                      <span className="text-xs font-medium text-accent">{exp.highlight}</span>
                     </div>
                   )}
                 </div>

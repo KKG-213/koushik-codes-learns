@@ -1,23 +1,23 @@
 const SkillsSection = () => {
   const skillCategories = [
     {
-      title: "Languages",
-      skills: ["C++", "Java", "JavaScript", "PHP", "Python"],
+      title: "Frontend",
+      skills: ["HTML", "CSS", "JavaScript", "TypeScript", "React"],
       color: "primary"
     },
     {
-      title: "Frontend",
-      skills: ["HTML", "CSS", "React", "Responsive Design"],
+      title: "Backend & Database",
+      skills: ["Node.js", "MySQL", "MongoDB"],
       color: "secondary"
     },
     {
-      title: "Backend & Database",
-      skills: ["Node.js", "SQL", "MongoDB", "AWS"],
+      title: "Design & Tools",
+      skills: ["Figma", "WordPress", "Responsive Design"],
       color: "accent"
     },
     {
-      title: "Specialized",
-      skills: ["AI/ML", "Robotics", "IoT", "Computer Vision", "OpenCV"],
+      title: "Languages",
+      skills: ["C++", "Java", "Python", "PHP"],
       color: "primary"
     }
   ]

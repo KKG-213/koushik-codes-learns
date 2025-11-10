@@ -4,46 +4,28 @@ import { Button } from "@/components/ui/button"
 const ProjectsSection = () => {
   const projects = [
     {
+      title: "100 JavaScript Projects",
+      description: "A comprehensive collection of 100 JavaScript projects showcasing various web development concepts, interactive features, and real-world applications.",
+      tech: ["JavaScript", "HTML", "CSS", "DOM Manipulation", "APIs"],
+      category: "Web Development",
+      color: "primary",
+      link: "http://100-js-project.s3-website.eu-north-1.amazonaws.com"
+    },
+    {
       title: "WordPress Web Design (Elementor + Razorpay)",
       description: "Built responsive business websites using Elementor. Integrated Razorpay for secure online payments.",
       tech: ["WordPress", "Elementor", "Razorpay", "Payment Gateway"],
       category: "Web Development",
-      color: "primary"
+      color: "secondary",
+      link: "https://mathcoders.org/program/after-school-program/"
     },
     {
       title: "Fast Restaurant (React + Firebase)",
       description: "Created a food ordering platform with dynamic menu management. Integrated Firebase for authentication & real-time database.",
       tech: ["React", "Firebase", "Authentication", "Real-time Database"],
       category: "Web Development",
-      color: "secondary"
-    },
-    {
-      title: "AI-Based Rock-Paper-Scissors Game",
-      description: "Computer vision game using webcam to detect hand gestures. Built with Python, OpenCV, and Mediapipe for real-time gesture recognition and AI gameplay.",
-      tech: ["Python", "OpenCV", "Mediapipe", "Computer Vision"],
-      category: "AI/ML",
-      color: "accent"
-    },
-    {
-      title: "Weather Station using ESP8266",
-      description: "IoT weather monitoring system with ESP8266 and DHT11 sensor. Features real-time data collection and web dashboard for temperature and humidity display.",
-      tech: ["ESP8266", "DHT11", "IoT", "Web Dashboard", "HTML/CSS/JS"],
-      category: "IoT",
-      color: "primary"
-    },
-    {
-      title: "Weather Forecast App",
-      description: "Real-time weather application using OpenWeatherMap API. Features dynamic UI updates, responsive design, and location-based weather data.",
-      tech: ["HTML", "CSS", "JavaScript", "API Integration"],
-      category: "Web Development",
-      color: "secondary"
-    },
-    {
-      title: "Smart To-Do List App",
-      description: "Responsive task management application with local storage support. Features include add/delete tasks, progress tracking, and persistent data storage.",
-      tech: ["HTML", "CSS", "JavaScript", "Local Storage"],
-      category: "Web Development",
-      color: "accent"
+      color: "accent",
+      link: "https://koushik-fast-food.vercel.app"
     },
     {
       title: "Interactive Scratch Game",
@@ -95,16 +77,20 @@ const ProjectsSection = () => {
                   ))}
                 </div>
                 
-                <div className="flex gap-3 pt-2">
-                  <Button variant="outline" size="sm" className="flex-1">
-                    <Github className="w-4 h-4" />
-                    Code
-                  </Button>
-                  <Button variant="ghost" size="sm" className="flex-1">
-                    <ExternalLink className="w-4 h-4" />
-                    Demo
-                  </Button>
-                </div>
+                {project.link && (
+                  <div className="pt-2">
+                    <Button variant="outline" size="sm" className="w-full" asChild>
+                      <a 
+                        href={project.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                        View Project
+                      </a>
+                    </Button>
+                  </div>
+                )}
               </div>
             </div>
           ))}

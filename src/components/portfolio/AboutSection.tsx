@@ -25,16 +25,14 @@ const AboutSection = () => {
           
           <div className="order-1 md:order-2 space-y-6">
             <p className="text-lg text-foreground/90 leading-relaxed">
-              I'm a passionate Software Engineer and AI/Robotics Course Instructor with a strong 
-              foundation in computer science and a drive for innovation. Currently pursuing my 
-              B.Tech in CSE with an impressive 8 CGPA.
+              I'm a passionate Web Developer with a strong foundation in computer science and a 
+              drive for innovation. Currently pursuing my B.Tech in CSE with an impressive 8 CGPA.
             </p>
             
             <p className="text-lg text-foreground/90 leading-relaxed">
-              With hands-on experience in both industry and education, I specialize in developing 
-              cutting-edge solutions and sharing knowledge with aspiring developers. I've solved 
+              Specializing in <span className="text-primary font-semibold">HTML</span>, <span className="text-primary font-semibold">CSS</span>, <span className="text-primary font-semibold">JavaScript</span>, <span className="text-secondary font-semibold">Node.js</span>, <span className="text-secondary font-semibold">WordPress</span>, <span className="text-accent font-semibold">MySQL</span>, and <span className="text-accent font-semibold">MongoDB</span>. I've solved 
               600+ problems across various coding platforms and built numerous projects ranging 
-              from web applications to AI-powered systems.
+              from dynamic web applications to full-stack solutions.
             </p>
             
             <div className="flex flex-wrap gap-4 pt-4">
@@ -49,30 +47,17 @@ const AboutSection = () => {
             </div>
           </div>
           
-          <div className="space-y-6">
-            <div className="card-glass rounded-xl p-6 hover-glow">
-              <h3 className="text-xl font-semibold mb-4 text-primary">Education</h3>
-              <div className="space-y-4">
-                <div>
-                  <h4 className="font-medium">B.Tech in Computer Science</h4>
-                  <p className="text-muted-foreground">UCET, Hazaribag • 2021-2025</p>
-                  <p className="text-accent font-semibold">8.0 CGPA</p>
-                </div>
-                <div>
-                  <h4 className="font-medium">CBSE XII</h4>
-                  <p className="text-muted-foreground">Saraswati Shishu Mandir • 2017-2019</p>
-                </div>
-              </div>
-            </div>
-            
-            <div className="card-glass rounded-xl p-6 hover-glow">
-              <h3 className="text-xl font-semibold mb-4 text-secondary">Current Role</h3>
+          <div className="card-glass rounded-xl p-6 hover-glow">
+            <h3 className="text-xl font-semibold mb-4 text-primary">Education</h3>
+            <div className="space-y-4">
               <div>
-                <h4 className="font-medium">Course Instructor AI and Robotics</h4>
-                <p className="text-muted-foreground">Math Coders Pvt Ltd • 2025-Present</p>
-                <p className="text-sm text-foreground/80 mt-2">
-                  Teaching AI & Robotics, managing frontend/backend systems, and onboarding students from different schools.
-                </p>
+                <h4 className="font-medium">B.Tech in Computer Science</h4>
+                <p className="text-muted-foreground">UCET, Hazaribag • 2021-2025</p>
+                <p className="text-accent font-semibold">8.0 CGPA</p>
+              </div>
+              <div>
+                <h4 className="font-medium">CBSE XII</h4>
+                <p className="text-muted-foreground">Saraswati Shishu Mandir • 2017-2019</p>
               </div>
             </div>
           </div>

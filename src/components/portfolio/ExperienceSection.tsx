@@ -3,11 +3,11 @@ import { Calendar, MapPin } from "lucide-react"
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Course Instructor AI and Robotics",
+      title: "Full Stack Developer",
       company: "Math Coders Pvt Ltd",
       location: "Hazaribag",
-      period: "June 2025 - Present",
-      description: "Teaching AI and Robotics, managing frontend and backend (WordPress) of website, and onboarding students from different schools.",
+      period: "June 2025 - september 2025",
+      description: "Developed scalable web App for LMS System",
       type: "current"
     },
     {

@@ -99,7 +99,7 @@ const ContactSection = () => {
                 </a>
                 
                 <a 
-                  href="https://my-portfolio-drab-seven-82.vercel.app/"
+                  href="https://koushik-codes-learns.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex flex-col items-center gap-3 p-4 bg-muted/20 rounded-lg hover:bg-muted/30 transition-colors"

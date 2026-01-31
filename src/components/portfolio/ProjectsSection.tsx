@@ -4,12 +4,29 @@ import { Button } from "@/components/ui/button"
 const ProjectsSection = () => {
   const projects = [
     {
+      title: "Storage-App",
+      description: "Developed and deployed a full-stack cloud storage platform used by 160+ users, supporting secure file upload, management, sharing, and real-time storage tracking",
+      tech: ["React.js, Node.js, Express.js, MongoDB, Redis, AWS (S3, CloudFront), Razorpay"],
+      category: "Web Development",
+      color: "primary",
+      link: "https://storemystuff.cloud/"
+    },
+    {
       title: "100 JavaScript Projects",
       description: "A comprehensive collection of 100 JavaScript projects showcasing various web development concepts, interactive features, and real-world applications.",
       tech: ["JavaScript", "HTML", "CSS", "DOM Manipulation", "APIs"],
       category: "Web Development",
       color: "primary",
       link: "http://100-js-project.s3-website.eu-north-1.amazonaws.com"
+    },
+    {
+      title: "Countries Api",
+      description: "Designed and implemented a custom REST API to serve country-level data including population, country codes, flags, and regional metadata",
+      tech: ["javascript, TypeScript, Node.js, Express.js"],
+      category: "Web Development",
+      color: "secondary",
+      link: "https://rest-countries-project-khaki-eight.vercel.app"
+
     },
     {
       title: "WordPress Web Design (Elementor + Razorpay)",
@@ -25,14 +42,7 @@ const ProjectsSection = () => {
       tech: ["React", "Firebase", "Authentication", "Real-time Database"],
       category: "Web Development",
       color: "accent",
-      link: "https://koushik-fast-food.vercel.app"
-    },
-    {
-      title: "Interactive Scratch Game",
-      description: "Educational math quiz game for elementary students (Class 3-5). Features animations, instant feedback, and engaging interactive storytelling.",
-      tech: ["Scratch", "Game Development", "Educational Design"],
-      category: "Education",
-      color: "primary"
+      link: "https://koushik-kitchen-connect-et8y.vercel.app/"
     }
   ]
 

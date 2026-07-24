@@ -3,12 +3,20 @@ import { Calendar, MapPin } from "lucide-react"
 const ExperienceSection = () => {
   const experiences = [
     {
+      title: "Full Stack Developer & Tech Coordinator",
+      company: "Atraski Technology Transformations",
+      location: "Remote",
+      period: "6 Months",
+      description: "Built and maintained scalable web applications using MERN, Shopify, WordPress, PHP, JavaScript, HTML5, CSS3, and MySQL while coordinating delivery, client communication, infrastructure, and technical operations across multiple brands.",
+      type: "current"
+    },
+    {
       title: "Full Stack Developer",
       company: "Math Coders Pvt Ltd",
       location: "Hazaribag",
-      period: "June 2025 - september 2025",
-      description: "Developed scalable web App for LMS System",
-      type: "current"
+      period: "June 2025 - September 2025",
+      description: "Developed scalable web applications for an LMS platform and contributed to end-to-end product delivery.",
+      type: "past"
     },
     {
       title: "160 Days of DSA",

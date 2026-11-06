@@ -3,97 +3,87 @@ import { Calendar, MapPin } from "lucide-react"
 const ExperienceSection = () => {
   const experiences = [
     {
+      title: "Full Stack Developer & Consultant",
+      company: "Independent / Client Projects",
+      location: "Remote",
+      period: "Current",
+      description:
+        "Designing and building end-to-end web solutions for businesses and startups across travel, healthcare, e-commerce, and SaaS, with a focus on responsive UI, user journeys, business workflows, and scalable frontend architecture.",
+      type: "current",
+      highlight: "Multi-Industry Delivery",
+    },
+    {
       title: "Full Stack Developer & Tech Coordinator",
       company: "Atraski Technology Transformations",
       location: "Remote",
       period: "6 Months",
-      description: "Built and maintained scalable web applications using MERN, Shopify, WordPress, PHP, JavaScript, HTML5, CSS3, and MySQL while coordinating delivery, client communication, infrastructure, and technical operations across multiple brands.",
-      type: "current"
+      description:
+        "Built and maintained client-facing web applications, worked across product delivery cycles, and supported technical operations for multiple business brands spanning commerce, services, and digital transformation projects.",
+      type: "past",
+      highlight: "Client Delivery",
     },
     {
       title: "Full Stack Developer",
       company: "Math Coders Pvt Ltd",
       location: "Hazaribag",
       period: "June 2025 - September 2025",
-      description: "Developed scalable web applications for an LMS platform and contributed to end-to-end product delivery.",
-      type: "past"
-    },
-    {
-      title: "160 Days of DSA",
-      company: "GeeksforGeeks",
-      location: "Online",
-      period: "Completed",
-      description: "Successfully completed 160 days of intensive Data Structures and Algorithms practice on GeeksforGeeks platform.",
-      type: "achievement",
-      link: "https://drive.google.com/file/d/1JQINWOuNGqeVRl4J4WiiJgR3zd9uZDEv/view?usp=drive_link"
+      description:
+        "Developed scalable web applications and contributed to end-to-end product execution for an educational platform, balancing UI quality, business requirements, and deployment readiness.",
+      type: "past",
+      highlight: "Product Development",
     },
     {
       title: "Web Design & Development",
       company: "Freelance",
       location: "Remote",
       period: "6 Months",
-      description: "Specialized in web design using WordPress, HTML, CSS, JavaScript, and MySQL. Successfully completed 10+ JavaScript projects showcasing dynamic web applications and interactive user interfaces.",
+      description:
+        "Created custom websites and digital experiences with WordPress, JavaScript, HTML, CSS, and MySQL for business and brand-focused solutions, while delivering a strong portfolio of practical web projects.",
       type: "past",
-      highlight: "10+ JavaScript Projects"
-    }
+      highlight: "10+ Projects",
+    },
   ]
 
   return (
     <section id="experience" className="section-padding bg-card/30">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12 gradient-text">
+      <div className="mx-auto max-w-4xl">
+        <h2 className="mb-12 text-center text-4xl font-bold gradient-text">
           Work Experience
         </h2>
-        
+
         <div className="space-y-8">
           {experiences.map((exp, index) => (
-            <div 
+            <div
               key={index}
               className={`card-glass rounded-xl p-6 hover-glow ${
-                exp.type === 'current' ? 'border-l-4 border-l-primary' : ''
+                exp.type === "current" ? "border-l-4 border-l-primary" : ""
               }`}
             >
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+              <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                 <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-foreground mb-1">
-                    {exp.title}
-                  </h3>
-                  <h4 className="text-lg font-medium text-primary mb-2">
-                    {exp.company}
-                  </h4>
-                  <p className="text-foreground/80 leading-relaxed">
-                    {exp.description}
-                  </p>
+                  <h3 className="mb-1 text-xl font-semibold text-foreground">{exp.title}</h3>
+                  <h4 className="mb-2 text-lg font-medium text-primary">{exp.company}</h4>
+                  <p className="leading-relaxed text-foreground/80">{exp.description}</p>
                 </div>
-                
-                <div className="md:text-right space-y-2">
-                  <div className="flex items-center md:justify-end gap-2 text-muted-foreground">
-                    <Calendar className="w-4 h-4" />
+
+                <div className="space-y-2 md:text-right">
+                  <div className="flex items-center gap-2 text-muted-foreground md:justify-end">
+                    <Calendar className="h-4 w-4" />
                     <span className="text-sm">{exp.period}</span>
                   </div>
-                  <div className="flex items-center md:justify-end gap-2 text-muted-foreground">
-                    <MapPin className="w-4 h-4" />
+                  <div className="flex items-center gap-2 text-muted-foreground md:justify-end">
+                    <MapPin className="h-4 w-4" />
                     <span className="text-sm">{exp.location}</span>
                   </div>
-                  {exp.type === 'current' && (
-                    <div className="inline-block px-3 py-1 bg-primary/10 border border-primary/20 rounded-full">
+                  {exp.type === "current" && (
+                    <div className="inline-block rounded-full border border-primary/20 bg-primary/10 px-3 py-1">
                       <span className="text-xs font-medium text-primary">Current Role</span>
                     </div>
                   )}
                   {exp.highlight && (
-                    <div className="inline-block px-3 py-1 bg-accent/10 border border-accent/20 rounded-full">
+                    <div className="inline-block rounded-full border border-accent/20 bg-accent/10 px-3 py-1">
                       <span className="text-xs font-medium text-accent">{exp.highlight}</span>
                     </div>
-                  )}
-                  {exp.link && (
-                    <a 
-                      href={exp.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-lg hover:bg-primary/20 transition-colors"
-                    >
-                      <span className="text-sm font-medium text-primary">View Certificate</span>
-                    </a>
                   )}
                 </div>
               </div>
